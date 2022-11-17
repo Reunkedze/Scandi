@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    background-color: #EFE6E4;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 95%;
+    height: 11vh;
+    margin: auto;
+    left: 0;
+    right: 0;
+    font-size: 22px;
+}
+
+.wide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 6;
+    font-style: normal;
+    font-weight: 400;
+    color: #533738;
+    text-decoration: none;
+}
+
+.site-logo {
+    width: 35px;
+    height: 35px;
+}
+
+.logo-description {
+}
+
+.navigation {
+    flex-grow: 10;
+}
+
+.navigation-list {
+    display: flex;
+    padding: 0;
+}
+
+.navigation-list-item { 
+    list-style-type: none;
+}
+
+.navigation-list-link {
+    color: #533738;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.promo {
+    background-image: url("img/sculpture_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    height: 100vh;
+    padding: 200px 250px;
+    box-sizing: border-box;
+}
+
+.main-heading {
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 74px;
+    margin: 0;
+    color: #533738;
+}
+
+.promo-description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+}
+
+button {
+    color: #EFE6E4;
+    background-color: #CC8B86;
+    padding: 40px 150px;
+    border: none;
+}
+
+.about {
+    width: 100%;
+    height: 90vh;
+    padding-top: 11vh;
+    font-weight: 400;
+    font-size: 3vh;
+    line-height: 6vh;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 6vw 40vw 50vw;
+    grid-template-rows: 10vh 70vh;
+    grid-template-areas:
+        " about-header about-header about-header"
+        ". about-img about-text";
+    color: #533738;
+}
+
+.about-header {
+    text-align: center;
+    margin: auto;
+    grid-area: about-header;
+    font-weight: 400;
+    font-size: 4vh;
+    text-transform: uppercase;
+    color: #533738;
+}
+
+.about-img {
+    margin-top: 5vh;
+    height: 70vh;
+    grid-area: about-img;
+
+}
+
+.about-text {
+    grid-area: about-text;
+}
+
+.achievement {
+    background-color: #8D7370;
+    height: 20vh;
+}
+
+.achievement-list {
+    width: 100%;
+    height: 20vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.achievement-list-element {
+    width: 15vw;
+    height: 18vh;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.achivement-text {
+    font-weight: 400;
+    font-size: 4vh;
+    line-height: 5vh;
+    color: white;
+}
+
+.portfolio {
+    margin: 0;
+    padding: 11vh;
+    padding-bottom: 4vh;
+}
+
+.portfolio-header {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #533738;
+}
+
+.column-1,
+.column-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.column-1 {
+    margin-bottom: 4vh;
+    gap: 3vw;
+}
+
+.portfolio-article {
+    background-blend-mode: multiply;
+    background-image: url("img/badroom.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #8D7370;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.portfolio-article-header {
+    font-size: 3vh;
+    color: white;
+}
+
+.portfolio-article-text {
+    font-size: 2vh;
+    color: white;
+}
+
+.kitchen {
+    width: 48vw;
+}
+
+.column-2 {
+    margin-bottom: 4vh;
+    gap: 3vw;
+
+}
+
+.waitingroom {
+    width: 48vw;
+}
+
+.bathroom {
+    flex-grow: 1;
+}
+
+.portfolio-watch-more {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    width: 30vw;
+    margin: auto;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    color: #533738;
+}
+
+.watch-more-arrow {
+    width: 61px;
+    height: 16px;
+}
+
+.team {
+    background-color: #E2C4BA;
+}
+
+.how-we-work {
+    background-color: #E2C4BA;
+}
+
+.request {
+    background-color: #8D7370;
+}
